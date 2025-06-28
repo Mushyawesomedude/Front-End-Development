@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Research Website</title>
+  <style>
+    body {
+      background-color: #1e1e1e;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h1, h2 {
+      color: #00ffff;
+    }
+
+    a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    img {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      max-width: 100%;
+      border: 2px solid #444;
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #444;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #333;
+      color: #00ffff;
+    }
+
+    td {
+      background-color: #2a2a2a;
+    }
+
+    .nav-buttons {
+      margin-bottom: 30px;
+    }
+
+    .nav-buttons button {
+      background-color: #333;
+      color: #00ffff;
+      border: none;
+      padding: 10px 15px;
+      margin: 5px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .nav-buttons button:hover {
+      background-color: #444;
+    }
+
+    .page {
+      display: none;
+    }
+
+    .active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav-buttons">
+    <button onclick="showPage('home')">Home</button>
+    <button onclick="showPage('topic1')">Topic 1</button>
+    <button onclick="showPage('topic2')">Topic 2</button>
+    <button onclick="showPage('references')">References</button>
+  </div>
+
+  <!-- Home -->
+  <div id="home" class="page active">
+    <h1>Welcome to Our Research Website</h1>
+    <p>This website presents research topics and references.</p>
+    <img src="https://via.placeholder.com/300x150" alt="Research Banner">
+    <h2>Navigation</h2>
+    <ul>
+      <li>Explore <strong>Climate Change</strong> and its global impact.</li>
+      <li>Understand the rise of <strong>Artificial Intelligence</strong>.</li>
+      <li>Check our reliable <strong>References</strong>.</li>
+    </ul>
+  </div>
+
+  <!-- Topic 1 -->
+  <div id="topic1" class="page">
+    <h1>Climate Change</h1>
+    <p>Climate change refers to long-term changes in temperature and weather patterns.</p>
+    <img src="https://via.placeholder.com/200" alt="Climate Change Image">
+    <h2>Key Factors</h2>
+    <ul>
+      <li>Greenhouse Gas Emissions</li>
+      <li>Deforestation</li>
+      <li>Fossil Fuels</li>
+    </ul>
+    <h2>Data Table</h2>
+    <table>
+      <tr><th>Year</th><th>Global Temperature (°C)</th></tr>
+      <tr><td>2000</td><td>14.3</td></tr>
+      <tr><td>2020</td><td>15.1</td></tr>
+    </table>
+  </div>
+
+  <!-- Topic 2 -->
+  <div id="topic2" class="page">
+    <h1>Artificial Intelligence</h1>
+    <p>Artificial Intelligence (AI) is the simulation of human intelligence in machines.</p>
+    <img src="https://via.placeholder.com/200" alt="AI Concept Image">
+    <h2>Applications of AI</h2>
+    <ul>
+      <li>Healthcare</li>
+      <li>Autonomous Vehicles</li>
+      <li>Natural Language Processing</li>
+    </ul>
+    <h2>Growth Over Time</h2>
+    <table>
+      <tr><th>Year</th><th>AI Market Size (Billion USD)</th></tr>
+      <tr><td>2015</td><td>5</td></tr>
+      <tr><td>2023</td><td>150</td></tr>
+    </table>
+  </div>
+
+  <!-- References -->
+  <div id="references" class="page">
+    <h1>References</h1>
+    <h2>Climate Change Sources</h2>
+    <ul>
+      <li><a href="https://www.ipcc.ch/" target="_blank">IPCC Reports</a></li>
+      <li><a href="https://climate.nasa.gov/" target="_blank">NASA Climate</a></li>
+    </ul>
+    <h2>AI Sources</h2>
+    <ul>
+      <li><a href="https://www.aimagazine.com/" target="_blank">AI Magazine</a></li>
+      <li><a href="https://openai.com/" target="_blank">OpenAI</a></li>
+    </ul>
+    <img src="https://via.placeholder.com/250x100" alt="Reference Banner">
+    <h2>Summary Table</h2>
+    <table>
+      <tr><th>Topic</th><th>Main Source</th></tr>
+      <tr><td>Climate Change</td><td>IPCC Reports</td></tr>
+      <tr><td>AI</td><td>AI Magazine</td></tr>
+    </table>
+  </div>
+
+  <script>
+    function showPage(id) {
+      const pages = document.querySelectorAll('.page');
+      pages.forEach(page => {
+        page.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
+
