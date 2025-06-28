@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Research Website - Home</title>
+</head>
+<body>
+    <h1>Welcome to Our Research Website</h1>
+    <p>This website presents research topics and references.</p>
+
+    <img src="https://via.placeholder.com/300x150" alt="Research Banner">
+
+    <h2>Navigation</h2>
+    <ul>
+        <li><a href="topic1.html">Topic 1: Climate Change</a></li>
+        <li><a href="topic2.html">Topic 2: Artificial Intelligence</a></li>
+        <li><a href="references.html">References</a></li>
+    </ul>
+</body>
+</html>
