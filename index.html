@@ -92,6 +92,8 @@
     <button onclick="showPage('home')">Home</button>
     <button onclick="showPage('Browser History')">Browser History</button>
     <button onclick="showPage('Browser Usage')">Browser Usage</button>
+    <button onclick="showPage('Browser Advantages')">Browser Advantages</button>
+    <button onclick="showPage('Browser Disadvantages')">Browser Disadvantages</button>
     <button onclick="showPage('references')">References</button>
   </div>
 
@@ -99,101 +101,93 @@
   <div id="home" class="page active">
     <h1>Welcome to Our Research Website</h1>
     <p>This website presents research topics and references.</p>
-    <img src="https://via.placeholder.com/300x150" alt="Research Banner">
+    <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" width="900" height="200" alt="Browsers Icon's">
     <h2>Navigation</h2>
     <ul>
-      <li>Explore browsers and the history and uses of them.</li>
+      <li>Explore browsers and the history and uses of them. And then afterwards take the Quiz! Do that on the Browser History page!</li>
+      
       <li>Understand the way the browsers were constructed and for what purposes.</li>
+      
       <li>Check the references on the reference page for more info.</li>
     </ul>
   </div>
 
   <!-- Browser History -->
-<div id="Browser History" class="page">
-  <h1>Browser History</h1>
-  <p>The long list of different web browsers and how each of them was formed.</p>
-  <img src="img" alt="Browser example">
-  <h2>Key Browser examples</h2>
-  <ul>
-    <li>Internet Explorer</li>
-    <li>Mozilla Firefox</li>
-    <li>Google Chrome</li>
-  </ul>
-  <h2>Data Table</h2>
-  <table>
-    <tr><th>Browser</th><th>Year Created</th></tr>
-    <tr><td>Internet Explorer</td><td>1995</td></tr>
-    <tr><td>FireFox</td><td>2004</td></tr>
-    <tr><td>Google Chrome</td><td>2008</td></tr>
-  </table>
+  <div id="Browser History" class="page">
+    <h1>Browser History</h1>
+    <p>A list of different web browsers and when they were created.</p>
+    <img src="https://cdn-icons-png.flaticon.com/256/6471/6471995.png" alt="Browser example">
+    <h2>Facts about the World Wide Web and other Specific Browsers</h2>
+    <ul>
+      <li>The World Wide Web or WWW, was first created in 1990, and marks the start of the age of browsers.</li>
+      <li>In 1995, Microsoft released Internet Explorer. Which just so happens to be the main browser most people and companies use.</li>
+      <li>Later down the line when Windows 10 was released, Microsoft went on to release Microsoft Edge, which led to Internet Explorer shutting down for good.</li>
+    </ul>
+    <h2>Browser Creation Dates</h2>
+    <table>
+      <tr><th>Browser</th><th>Year Created</th></tr>
+      <tr><td>Internet Explorer</td><td>1995</td></tr>
+      <tr><td>FireFox</td><td>2004</td></tr>
+      <tr><td>Google Chrome</td><td>2008</td></tr>
+      <tr><td>Microsoft Edge</td><td>2015</td></tr>
+      <tr><td>Opera GX</td><td>2019</td></tr>
+    </table>
 
-  <h2>Here is a fun quiz to test your knowledge!</h2>
+    <h2>Here is a fun quiz to test your knowledge!</h2>
 
-  <h3>1. Which company developed Google Chrome?</h3>
-  <ul>
-    <li><input type="radio" name="q1" id="q1a" value="Apple"><label for="q1a">Apple</label></li>
-    <li><input type="radio" name="q1" id="q1b" value="Microsoft"><label for="q1b">Microsoft</label></li>
-    <li><input type="radio" name="q1" id="q1c" value="Google"><label for="q1c">Google</label></li>
-    <li><input type="radio" name="q1" id="q1d" value="Mozilla"><label for="q1d">Mozilla</label></li>
-  </ul>
+    <h3>1. Which company developed Google Chrome?</h3>
+    <ul>
+      <li><input type="radio" name="q1" id="q1a" value="Apple"><label for="q1a">Apple</label></li>
+      <li><input type="radio" name="q1" id="q1b" value="Microsoft"><label for="q1b">Microsoft</label></li>
+      <li><input type="radio" name="q1" id="q1c" value="Google"><label for="q1c">Google</label></li>
+      <li><input type="radio" name="q1" id="q1d" value="Mozilla"><label for="q1d">Mozilla</label></li>
+    </ul>
 
-  <h3>2. Fill in the blank: ________ was the default web browser for Windows for many years.</h3>
-  <input type="text" id="q2" style="width: 300px; padding: 5px; margin-top: 5px; background-color: #2a2a2a; color: #ffffff; border: 1px solid #444; border-radius: 5px;">
+    <h3>2. Fill in the blank: ________ was the default web browser for Windows for many years.</h3>
+    <input type="text" id="q2" style="width: 300px; padding: 5px; margin-top: 5px; background-color: #2a2a2a; color: #ffffff; border: 1px solid #444; border-radius: 5px;">
 
-  <h3>3. Which of the following browsers are open-source? (Select all that apply)</h3>
-  <ul>
-    <li><input type="checkbox" id="q3a" value="Firefox"><label for="q3a">Mozilla Firefox</label></li>
-    <li><input type="checkbox" id="q3b" value="Chrome"><label for="q3b">Google Chrome</label></li>
-    <li><input type="checkbox" id="q3c" value="Edge"><label for="q3c">Microsoft Edge</label></li>
-    <li><input type="checkbox" id="q3d" value="Brave"><label for="q3d">Brave</label></li>
-  </ul>
+    <h3>3. Which of the following browsers are open-source? (Select all that apply)</h3>
+    <ul>
+      <li><input type="checkbox" id="q3a" value="Firefox"><label for="q3a">Mozilla Firefox</label></li>
+      <li><input type="checkbox" id="q3b" value="Chrome"><label for="q3b">Google Chrome</label></li>
+      <li><input type="checkbox" id="q3c" value="Edge"><label for="q3c">Microsoft Edge</label></li>
+      <li><input type="checkbox" id="q3d" value="Brave"><label for="q3d">Brave</label></li>
+    </ul>
 
-  <button onclick="checkQuiz()" style="margin-top: 15px; background-color: #333; color: #00ffff; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">Submit Quiz</button>
-  <p id="quiz-result" style="margin-top: 15px; color: #ffcc00;"></p>
-</div>
+    <button onclick="checkQuiz()" style="margin-top: 15px; background-color: #333; color: #00ffff; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">Submit Quiz</button>
+    <p id="quiz-result" style="margin-top: 15px; color: #ffcc00;"></p>
+  </div>
 
-<script>
-  function checkQuiz() {
-    let score = 0;
-
-    // Question 1: Correct answer is Google
-    const q1Answer = document.querySelector('input[name="q1"]:checked');
-    if (q1Answer && q1Answer.value === "Google") {
-      score++;
-    }
-
-    // Question 2: Fill in the blank, answer is "Internet Explorer"
-    const q2Answer = document.getElementById("q2").value.trim().toLowerCase();
-    if (q2Answer === "internet explorer") {
-      score++;
-    }
-
-    // Question 3: Correct answers are Firefox and Brave
-    const q3a = document.getElementById("q3a").checked;
-    const q3b = document.getElementById("q3b").checked;
-    const q3c = document.getElementById("q3c").checked;
-    const q3d = document.getElementById("q3d").checked;
-
-    if (q3a && !q3b && !q3c && q3d) {
-      score++;
-    }
-
-    // Display result
-    document.getElementById("quiz-result").textContent = `You got ${score} out of 3 questions correct.`;
-  }
-</script>
-
-
-  <!-- Topic 2 -->
+ 
   <div id="Browser Usage" class="page">
     <h1>Browser Usage</h1>
-    <p>Browser Usage can be catacorized in many ways</p>
+    <p>A continuation of the history of browsers without the interactive quiz.</p>
+    <img src="img" alt="Browser example">
+    <h2>More Browser Examples</h2>
+    <ul>
+      <li>Safari</li>
+      <li>Opera</li>
+      <li>Edge</li>
+    </ul>
+    <h2>Release Years</h2>
+    <table>
+      <tr><th>Browser</th><th>Year Created</th></tr>
+      <tr><td>Safari</td><td>2003</td></tr>
+      <tr><td>Opera</td><td>1995</td></tr>
+      <tr><td>Edge</td><td>2015</td></tr>
+    </table>
+  </div>
+
+  
+  <div id="Browser Advantages" class="page">
+    <h1>Browser Advantages</h1>
+    <p>Browser Advantages can be categorized in many ways.</p>
     <img src="https://via.placeholder.com/200" alt="Browser Example #2">
     <h2>Advantages of Different Browsers</h2>
     <ul>
       <li>OperaGX offers gamers a way to use a browser while being able to integrate different programs for gaming.</li>
       <li>Google Chrome is the most used browser nowadays and is the browser that has the broadest use set.</li>
-      <li>Brave is known for their advanced Ad-Blocking and built in password manager, Tor browser and more! </li>
+      <li>Brave is known for their advanced Ad-Blocking and built in password manager, Tor browser and more!</li>
     </ul>
     <h2>Types and Classifications of Browsers</h2>
     <table>
@@ -204,25 +198,55 @@
     </table>
   </div>
 
+  
+  <div id="Browser Disadvantages" class="page">
+    <h1>Browser Disadvantages</h1>
+    <p>Additional insights on how users interact with modern browsers.</p>
+    <img src="https://via.placeholder.com/200" alt="Browser Use Cases">
+    <h2>Trending Features</h2>
+    <ul>
+      <li>Dark mode and readability features</li>
+      <li>Cross-device syncing</li>
+      <li>Developer tools for web development</li>
+    </ul>
+    <h2>User Preferences Survey</h2>
+    <table>
+      <tr><th>Feature</th><th>Popularity (%)</th></tr>
+      <tr><td>Ad Blocking</td><td>70%</td></tr>
+      <tr><td>Privacy Tools</td><td>65%</td></tr>
+      <tr><td>Speed</td><td>90%</td></tr>
+    </table>
+  </div>
+
   <!-- References -->
   <div id="references" class="page">
     <h1>References</h1>
     <h2>Browser History Sources</h2>
     <ul>
-      <li><a href="" target="_blank">Browser History Ex 1</a></li>
-      <li><a href="" target="_blank">Browser History Ex 2</a></li>
+      <li><a href="https://www.nominus.com/en/dm/blog/generic-domains/a-timeline-of-important-events-in-internet-history#:~:text=1995:%20Microsoft%20releases%20its%20first,based%20on%20relationships%20between%20pages.">Internet History by the year</a></li>
+      <li><a href="#">Browser History Ex 2</a></li>
+      <li><a href="#">Browser History Ex 3</a></li>
     </ul>
     <h2>Browser Usage Sources</h2>
     <ul>
-      <li><a href="" target="https://ksuweb.github.io/IT3203/">Browser Usage Ex1</a></li>
-      <li><a href="" target="_blank">Browser Usage Ex 2</a></li>
+      <li><a href="#">Browser Usage Ex 1</a></li>
+      <li><a href="#">Browser Usage Ex 2</a></li>
+    </ul>
+    <h2>Browser Advantages Sources</h2>
+    <ul>
+      <li><a href="#">Browser Advantages Ex 1</a></li>
+      <li><a href="#">Browser Advantages Ex 2</a></li>
+    </ul>
+    <h2>Browser Disadvantages Sources</h2>
+    <ul>
+      <li><a href="#">Browser Advantages Ex 1</a></li>
+      <li><a href="#">Browser Advantages Ex 2</a></li>
     </ul>
     <h2>Main project class link</h2>
     <ul>
       <li><a href="https://ksuweb.github.io/IT3203/" target="_blank">Class Project Link</a></li>
     </ul>
-    <img src="https://via.placeholder.com/250x100" alt="Reference Banner">
-  
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Kennesaw_State_Owls_logo.svg/2170px-Kennesaw_State_Owls_logo.svg.png" width="400" height="400" alt="KSU Logo">
   </div>
 
   <script>
@@ -233,8 +257,32 @@
       });
       document.getElementById(id).classList.add('active');
     }
+
+    function checkQuiz() {
+      let score = 0;
+
+      const q1Answer = document.querySelector('input[name="q1"]:checked');
+      if (q1Answer && q1Answer.value === "Google") {
+        score++;
+      }
+
+      const q2Answer = document.getElementById("q2").value.trim().toLowerCase();
+      if (q2Answer === "internet explorer") {
+        score++;
+      }
+
+      const q3a = document.getElementById("q3a").checked;
+      const q3b = document.getElementById("q3b").checked;
+      const q3c = document.getElementById("q3c").checked;
+      const q3d = document.getElementById("q3d").checked;
+
+      if (q3a && !q3b && !q3c && q3d) {
+        score++;
+      }
+
+      document.getElementById("quiz-result").textContent = `You got ${score} out of 3 questions correct.`;
+    }
   </script>
 
 </body>
 </html>
-
